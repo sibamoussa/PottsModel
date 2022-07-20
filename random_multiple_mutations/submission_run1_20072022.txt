@@ -1,0 +1,7 @@
+#!/bin/bash
+#SBATCH --time=1-00:00:00
+#SBATCH --account=def-simine
+#SBATCH --mem=100G
+#SBATCH --cpus-per-task=16
+module load matlab/2021a
+matlab -nodisplay -r "main_sampler_fullE_t001_ediff_randseqgen_1"
